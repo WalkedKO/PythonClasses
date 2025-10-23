@@ -1,0 +1,22 @@
+3.1
+
+x = 2; y = 3;
+if (x > y):
+    result = x;
+else:
+    result = y;
+Kod jest działający, ale format nie jest wygodny ani zalecany w Pythonie
+
+for i in "axby": if ord(i) < 100: print (i)
+Nie działa ponieważ po dwukropku z fora nie może znajdować się if.
+
+for i in "axby": print (ord(i) if ord(i) < 100 else i)
+Tak jak w pierwszym przypadku, działający.
+
+3.2
+L = [3, 5, 4] ; L = L.sort()
+x, y = 1, 2, 3 # do dwóch zmiennych przypisujemy 3 wartości
+X = 1, 2, 3 ; X[1] = 4 # X to tuple, nie można nadpisywać w nim wartości
+X = [1, 2, 3] ; X[3] = 4 # index 3 nie istnieje, to nie sposob na dodanie do listy
+X = "abc" ; X.append("d") # do stringa nie dodajemy przez append
+L = list(map(pow, range(8))) #brakuje wykładnika
