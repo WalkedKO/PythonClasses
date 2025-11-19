@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fa810f-d20f-476a-bb82-228a8d6118e6" name="Changes" comment="Done tasks 5.3">
+    <list default="true" id="30fa810f-d20f-476a-bb82-228a8d6118e6" name="Changes" comment="Done tasks 6">
+      <change afterPath="$PROJECT_DIR$/Zestaw7/iteratory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zestaw7/triangles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +51,12 @@
     "Python tests.Python tests in points.py.executor": "Run",
     "Python tests.Python tests in polys.py.executor": "Run",
     "Python tests.Python tests in test.py.executor": "Run",
+    "Python tests.Python tests in triangles.py.executor": "Run",
     "Python.fracs.executor": "Run",
+    "Python.iteratory.executor": "Run",
     "Python.polys.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.triangles.executor": "Run",
     "Python.zadania.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -110,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762354503818</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Done tasks 6">
+      <option name="closed" value="true" />
+      <created>1762968296297</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762968296297</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +142,7 @@
     <MESSAGE value="Done tasks 3" />
     <MESSAGE value="Done tasks 4" />
     <MESSAGE value="Done tasks 5.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done tasks 5.3" />
+    <MESSAGE value="Done tasks 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done tasks 6" />
   </component>
 </project>
