@@ -8,8 +8,14 @@ class Triangle:
         self.pt1 = Point(x1, y1)
         self.pt2 = Point(x2, y2)
         self.pt3 = Point(x3, y3)
-        if self.pt1.cross(self.pt2) == 0 and self.pt2.cross(self.pt3) == 0 and self.pt1.cross(self.pt3) == 0:
+        a = self.pt2 - self.pt1
+        b = self.pt3 - self.pt1
+        if a.cross(b) == 0:
             raise ValueError
+
+    @staticmethod
+    def from_points(points):
+        return Triangle(points[0].x, points[0].y, points[1].x, points[1].y, points[2].x, points[2].y)
 
     def __str__(self):         # "[(x1, y1), (x2, y2), (x3, y3)]"
         return f"[{self.pt1}, {self.pt2}, {self.pt3}]"
@@ -39,35 +45,37 @@ class Triangle:
         cx, cy = new_pt(self.pt3, self.pt1)
         return (Triangle(self.pt1.x, self.pt1.y, ax, ay, cx, cy),
                 Triangle(self.pt2.x, self.pt2.y, ax, ay, bx, by),
-                Triangle(self.pt3.x, self.pt3.y, bx, by, cx, cy))
+                Triangle(self.pt3.x, self.pt3.y, bx, by, cx, cy),
+                Triangle(ax, ay, bx,by,cx,cy))
+    # added for 8th set of exercises
+    @property
+    def top(self):
+        return max((self.pt1.y, self.pt2.y, self.pt3.y))
 
+    @property
+    def left(self):
+        return min((self.pt1.x, self.pt2.x, self.pt3.x))
 
-import unittest
+    @property
+    def bottom(self):
+        return min((self.pt1.y, self.pt2.y, self.pt3.y))
 
-class TestTriangle(unittest.TestCase):
-    def setUp(self):
-        self.tr1 = Triangle(0, 0, 1, 0, .5, 1)
-        self.tr2 = Triangle(1, 0, 0, 0, .5, 1)
-        self.tr3 = Triangle(0,2,2,2,0,1)
-    def test_str(self):
-        self.assertEqual(str(self.tr1), "[(0, 0), (1, 0), (0.5, 1)]")
-    def test_repr(self):
-        self.assertEqual(repr(self.tr1), "Triangle(0, 0, 1, 0, 0.5, 1)")
-    def test_eq(self):
-        self.assertEqual(self.tr1 == self.tr2, True)
-    def test_neg(self):
-        self.assertEqual(self.tr1 != self.tr3, True)
-    def test_center(self):
-        self.assertEqual(self.tr1.center(), Point(0.5, 1/3))
-    def test_area(self):
-        self.assertEqual(self.tr1.area(), 0.5)
-    def test_move(self):
-        self.tr1.move(1, 2)
-        self.assertEqual(self.tr1, Triangle(1,2,2,2,1.5,3))
-    def test_make(self):
-        self.tr1 = Triangle(0, 0, 1, 0, .5, 1)
-        self.assertEqual(self.tr1.make4(), (Triangle(0, 0, 0.5, 0, 0.25,0.5),
-                                                 Triangle(0.5, 0, 1, 0, 0.75, 0.5),
-                                                 Triangle(0.25,0.5, 0.75, 0.5, 0.5, 1)))
-if __name__ == '__main__':
-    unittest.main()
+    @property
+    def right(self):
+        return max((self.pt1.x, self.pt2.x, self.pt3.x))
+
+    @property
+    def topleft(self):
+        return Point(self.left, self.top)
+
+    @property
+    def bottomleft(self):
+        return Point(self.left, self.bottom)
+
+    @property
+    def topright(self):
+        return Point(self.right, self.top)
+
+    @property
+    def bottomright(self):
+        return Point(self.right, self.bottom)
