@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fa810f-d20f-476a-bb82-228a8d6118e6" name="Changes" comment="Done task 8, game ready but yet to be developed">
-      <change beforePath="$PROJECT_DIR$/Zestaw9/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zestaw9/main.py" afterDir="false" />
+    <list default="true" id="30fa810f-d20f-476a-bb82-228a8d6118e6" name="Changes" comment="Repaired a bug">
+      <change afterPath="$PROJECT_DIR$/Zestaw10/botanswer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zestaw10/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests in fracs.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in points.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in polys.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_triangles.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in triangles.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.flakes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fracs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.iteratory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.polys.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.triangles.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zadania.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in fracs.py.executor": "Run",
+    "Python tests.Python tests in points.py.executor": "Run",
+    "Python tests.Python tests in polys.py.executor": "Run",
+    "Python tests.Python tests in test.py.executor": "Run",
+    "Python tests.Python tests in test_triangles.py.executor": "Run",
+    "Python tests.Python tests in triangles.py.executor": "Run",
+    "Python.botanswer.executor": "Run",
+    "Python.flakes.executor": "Run",
+    "Python.fracs.executor": "Run",
+    "Python.iteratory.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.polys.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.triangles.executor": "Run",
+    "Python.zadania.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\KACPER\Documents\PYTONH\PythonSemV" />
@@ -156,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765358889221</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added score">
+      <option name="closed" value="true" />
+      <created>1765359161634</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765359161634</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Repaired a bug">
+      <option name="closed" value="true" />
+      <created>1765359248975</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765359248975</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +198,8 @@
     <MESSAGE value="Done tasks 7.4 and 7.6" />
     <MESSAGE value="Done task 8.2 and repaired 7.3" />
     <MESSAGE value="Done task 8, game ready but yet to be developed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done task 8, game ready but yet to be developed" />
+    <MESSAGE value="Added score" />
+    <MESSAGE value="Repaired a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repaired a bug" />
   </component>
 </project>
