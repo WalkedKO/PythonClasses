@@ -17,6 +17,9 @@ left_max = 800
 flake_size = 80
 flakes_list = []
 
+score = 0
+font = pygame.font.SysFont('Comic Sans MS', 16)
+text = font.render(f'Score: {score}', True, color='white')
 pygame.time.set_timer(spawn_flake, 1000)
 while True:
     for event in pygame.event.get():
@@ -31,6 +34,9 @@ while True:
                 if fl.collidepoint(pos) and fl.moving:
                     flakes_list.pop(id)
     screen.fill('black')
+    textRect = text.get_rect()
+    textRect.move_ip(0, 0)
+    screen.blit(text, textRect)
     for id, fl in enumerate(flakes_list):
         if fl.moving:
             fl.move_ip(0, 2)
@@ -44,6 +50,8 @@ while True:
                 flakes_list[id].moving = False
         else:
             pygame.draw.rect(screen, 'gray', fl)
-
+            if fl.top >= flake_size:
+                pygame.quit()
+                sys.exit(0)
     pygame.display.flip()
     clock.tick(FPS)
