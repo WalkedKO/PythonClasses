@@ -19,7 +19,7 @@ flakes_list = []
 
 score = 0
 font = pygame.font.SysFont('Comic Sans MS', 16)
-text = font.render(f'Score: {score}', True, color='white')
+text = font.render(f'Score: {score}', True,'white')
 pygame.time.set_timer(spawn_flake, 1000)
 while True:
     for event in pygame.event.get():
@@ -33,6 +33,8 @@ while True:
             for id, fl in enumerate(flakes_list):
                 if fl.collidepoint(pos) and fl.moving:
                     flakes_list.pop(id)
+                    score += 1
+                    text = font.render(f'Score: {score}', True, 'white')
     screen.fill('black')
     textRect = text.get_rect()
     textRect.move_ip(0, 0)
