@@ -52,7 +52,8 @@ while True:
                 flakes_list[id].moving = False
         else:
             pygame.draw.rect(screen, 'gray', fl)
-            if fl.top >= flake_size:
+            if fl.top <= flake_size:
+                print(fl.top)
                 pygame.quit()
                 sys.exit(0)
     pygame.display.flip()
