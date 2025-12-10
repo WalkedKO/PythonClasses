@@ -1,13 +1,14 @@
 import tkinter as tk
 from random import randint
 class BotAnswer(tk.Label):
-    def __init__(self, root, width: float, height: float, rock_img: tk.PhotoImage, paper_img: tk.PhotoImage, scissors_img: tk.PhotoImage):
+    def __init__(self, root, width: float, height: float, rock_img: tk.PhotoImage, paper_img: tk.PhotoImage, scissors_img: tk.PhotoImage, result: tk.Label):
         super().__init__(root, width=width, height = height)
         self.rock_img = rock_img
         self.paper_img = paper_img
         self.scissors_img = scissors_img
         self.state = 0
-    def randomize(self, player_input, result_text):
+        self.result_text = result
+    def randomize(self, player_input):
         self.state = randint(0, 2)
         print(self.state)
         if self.state == 0:
@@ -21,11 +22,11 @@ class BotAnswer(tk.Label):
             self.image = self.scissors_img
 
         if (player_input, self.state) in ((0,2), (1, 0), (2, 1)):
-            result_text.config(text="Wygrales!")
-            result_text.text = "Wygrales!"
+            self.result_text.config(text="Wygrales!")
+            self.result_text.text = "Wygrales!"
         elif player_input == self.state:
-            result_text.config(text="Remis")
-            result_text.text = "Remis"
+            self.result_text.config(text="Remis")
+            self.result_text.text = "Remis"
         else:
-            result_text.config(text="Przegrales...")
-            result_text.text = "Przegrales..."
+            self.result_text.config(text="Przegrales...")
+            self.result_text.text = "Przegrales..."
